@@ -1,0 +1,115 @@
+:root{
+    --ws-orange:#ff7f50;
+    --ws-primary:green;
+    --ws-white:#fff;
+}
+html,
+body{
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ /*font-family: Arial, Helvetica, sans-serif;*/
+ color: var(--ws-primary);
+}
+
+h1{
+    text-align: center;
+}
+nav>ul{
+    background-color: var(--ws-orange);
+    list-style: none;
+    min-height: 32px;
+}
+nav>ul>li{
+    margin: 1em;
+    display: inline;
+    height: 32px;
+    line-height: 32px;
+}
+nav>ul>li>a{
+    text-decoration: none;
+    color:var(--ws-white);
+}
+main{
+    padding: 10px;
+}
+aside{
+    width: 30%;
+    padding-top: 15px;
+    padding-left: 15px;
+    margin-left: 15px;
+    font-style: italic;
+    background-color: lightgray;
+}
+footer{
+    position: inherit;
+    background-color: var(--ws-orange);
+    color: var(--ws-white);
+    bottom:0;
+    width: 99%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size:larger;
+}
+.pull-left{
+    float: left;
+}
+.pull-right{
+    float:right;
+}
+#main-title{
+    font-size: 45px;
+    color:var(--ws-orange);
+    font-weight: bolder;
+}
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-0.5 * var(--bs-gutter-x));
+    margin-left: calc(-0.5 * var(--bs-gutter-x));
+  }
+  .col-3{
+      width: 33%;
+  }
+  .form-control{
+      margin: 0.25em;
+      padding-left: 0.25em;
+      padding-right: 0.25em;
+      height: 25px;
+      border-color:lightgray;
+      border-style: solid;
+      border-radius: 0.25em;
+  }
+  .form-control:focus{
+  color: #212529;
+  background-color: #fff;
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.table{
+    width: 100%;
+    border-style: solid;
+    border-color: green;
+    text-align: center;
+}
+.table>thead>tr>th{
+    font-size: larger;
+    font-weight: bolder;
+    background-color: green;
+    color: white;
+}
+.table>thead>tr>th,.table>tbody>tr>td,.table>tfoot>tr>th {
+    border-style: solid;
+    border-width: 1px;
+    border-color: green;
+}
+
+span{
+    border-style: solid;
+    border-width: 1px;
+    border-color: green;
+}

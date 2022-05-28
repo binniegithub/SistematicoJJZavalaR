@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistematico</title>
+    <link href="assets/css/site.css" rel="stylesheet" type="text/css">
+    <script src="assets/js/common/util.datetime.js" type="text/javascript"></script>
+
+    <script>
+            
+            var table = document.getElementById("listaProductos"), sumVal = 0;
+            
+            for(var i = 1; i < table.rows.length; i++)
+            {
+                sumVal = sumVal + parseInt(table.rows[i].cells[2].innerHTML);
+            }
+            
+            document.getElementById("val").innerHTML = "Total= " + sumVal;
+            console.log(sumVal);
+            
+        </script>
+    
+</head>
+<body>
+    <header>
+        <h1>Sistematico Aplicaciones Graficas & Multimedia</h1>
+    </header>
+    <section>
+        <div id="container">
+            <form>
+                <fieldset>
+                    <legend>Ingresa los datos</legend>
+                    <label>Producto</label><br>
+                        <select name="productolista" id="producto">
+                        <option value="Arroz">Arroz</option>
+                        <option value="Frijoles">Frijoles</option>
+                        <option value="Aceite">Aceite</option>
+                        </select><br>
+                    <label>Cantidad</label><br>
+                    <input id="cantidad" type="number" class="form-control" min="1"><br>
+                    <label>Precio</label><br>
+                    <input id="precio" type="number" class="form-control" min="1" max="100"><br>
+                    <button type="button" id="add-product">Agregar</button>
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        Listado
+                    </legend>
+                    <table id="listaProductos" class="table">
+                        <thead>
+                            <tr>
+                                <th>
+                                    Producto
+                                </th>
+                                <th>
+                                    Cantidad
+                                </th>
+                                <th>
+                                    Precio
+                                </th>
+                                <th>
+                                    Subtotal
+                                </th>
+                                <th>
+                                
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                        <tbody>
+                            <td>Total</td>
+                            <td><id="total"></td>
+                        </tbody>
+                    </table>               
+                </fieldset>
+            </form>
+        </div>
+    </section>
+    <script src="assets/js/index.js" type="text/javascript"></script>
+</body>
+</html>
